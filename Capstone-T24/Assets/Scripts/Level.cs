@@ -2,7 +2,7 @@
 // EMAIL: syokoyama2001@gmail.com
 // COURSE: CS 425/426
 // ASSIGNMENT: Senior Project
-// FILE NAME: UILevelElement.cs
+// FILE NAME: Level.cs
 /* FILE DESCRIPTION: Class that stores level data for use in UI elements and file I/O. */
 
 using System.Collections;
@@ -10,22 +10,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Level : MonoBehaviour
+public class Level
 {
     /*---------- Fields ----------*/
     public string name; // Displayed on the load menu
-    public string sceneName; // Stores scene name; access scene via SceneManager Methods
+    public string sceneName; // Stores scene name; used to access scenes via SceneManager Methods
     public bool isUnlocked; // Determines if player has access to level
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    /*---------- Methods ----------*/
+    // Parameterized Constructor
+    public Level(string newName, string newSceneName, bool newIsUnlocked)
     {
-        
+        name = newName;
+        sceneName = newSceneName;
+        isUnlocked = newIsUnlocked;
     }
 }
