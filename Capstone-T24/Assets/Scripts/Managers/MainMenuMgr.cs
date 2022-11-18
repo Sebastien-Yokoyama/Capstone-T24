@@ -3,7 +3,7 @@
 // COURSE: CS 425/426
 // ASSIGNMENT: Senior Project
 // FILE NAME: MainMenuMgr.cs
-/* FILE DESCRIPTION: Manages all the main menu elements in the game. */
+/* FILE DESCRIPTION: Manages all the main menu UI elements in the game. */
 
 using System.Collections;
 using System.Collections.Generic;
@@ -58,11 +58,11 @@ public class MainMenuMgr : MonoBehaviour
     // Helper method that sets data given an index value
     void SetData(int index)
     {
-        selectedLevelName.text = levels[index].name;
+        selectedLevelName.text = levels[index].level.name;
         selectedLevelThumbnail.sprite = levels[index].thumbnail;
-        lockOverlay.gameObject.SetActive(!levels[index].isUnlocked);
-        startButton.gameObject.SetActive(levels[index].isUnlocked);
-        lockText.gameObject.SetActive(!levels[index].isUnlocked);
+        lockOverlay.gameObject.SetActive(!levels[index].level.isUnlocked);
+        startButton.gameObject.SetActive(levels[index].level.isUnlocked);
+        lockText.gameObject.SetActive(!levels[index].level.isUnlocked);
     }
 
 
@@ -111,7 +111,7 @@ public class MainMenuMgr : MonoBehaviour
     // Loads the level from the List that corresponds to the given index
     public void LoadLevel(int index)
     {
-        SceneManager.LoadSceneAsync(levels[selectedLevelIndex].sceneName);
+        SceneManager.LoadSceneAsync(levels[selectedLevelIndex].level.sceneName);
     }
 
 

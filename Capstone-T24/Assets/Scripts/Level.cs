@@ -3,22 +3,20 @@
 // COURSE: CS 425/426
 // ASSIGNMENT: Senior Project
 // FILE NAME: UILevelElement.cs
-/* FILE DESCRIPTION: Class that stores level data for use in UI elements. */
+/* FILE DESCRIPTION: Class that stores level data for use in UI elements and file I/O. */
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class UILevelElement : MonoBehaviour
+[System.Serializable]
+public class Level : MonoBehaviour
 {
     /*---------- Fields ----------*/
-    // Fields for Load Menu
-    public Level level; // Stores level data
-    public Sprite thumbnail;   // Displayed on the load menu
+    public string name; // Displayed on the load menu
+    public string sceneName; // Stores scene name; access scene via SceneManager Methods
+    public bool isUnlocked; // Determines if player has access to level
 
-    /*---------- Methods ----------*/
     // Start is called before the first frame update
     void Start()
     {

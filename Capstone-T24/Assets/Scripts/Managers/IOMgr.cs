@@ -2,21 +2,18 @@
 // EMAIL: syokoyama2001@gmail.com
 // COURSE: CS 425/426
 // ASSIGNMENT: Senior Project
-// FILE NAME: UILevelElement.cs
-/* FILE DESCRIPTION: Class that stores level data for use in UI elements. */
+// FILE NAME: IOMgr.cs
+/* FILE DESCRIPTION: Manages all the file I/O in the application. File I/O is used for saving player progress. */
 
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class UILevelElement : MonoBehaviour
+public class IOMgr : MonoBehaviour
 {
     /*---------- Fields ----------*/
-    // Fields for Load Menu
-    public Level level; // Stores level data
-    public Sprite thumbnail;   // Displayed on the load menu
+    public string fileName = Application.persistentDataPath + "/gamedata.json";
 
     /*---------- Methods ----------*/
     // Start is called before the first frame update
@@ -25,9 +22,21 @@ public class UILevelElement : MonoBehaviour
         
     }
 
+
     // Update is called once per frame
     void Update()
     {
         
     }
+
+
+    // Read Save File
+    public static bool CreateFromJSON(string jsonString)
+    {
+        return JsonUtility.FromJson<bool>(jsonString);
+    }
+
+
+    // Write Save File
+
 }
