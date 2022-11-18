@@ -22,11 +22,11 @@ public class MainMenuMgr : MonoBehaviour
         inst = this;
     }
 
-
     /*---------- Fields ----------*/
     // Fields for Managing Load Menu
     [Header("Load Menu")]
-    public List<UILevelElement> levels = new List<UILevelElement>();    // Stores prefabs of UILevelElement that have name, thumbnail, etc.
+    public List<Level> levels = new List<Level>();    // Stores prefabs of Level that have name, unlock status, etc.
+    public List<Sprite> levelThumbnails = new List<Sprite>();   // Stores thumbnails of each level
     public int selectedLevelIndex;    // Index of Level currently being displayed
 
     public TMP_Text selectedLevelName;    // Object that displays level name
@@ -34,7 +34,6 @@ public class MainMenuMgr : MonoBehaviour
     public Image lockOverlay;   // Set True when level is locked
     public Button startButton;  // Start Button
     public TMP_Text lockText;   // Displays text that level is locked
-
 
     /*---------- Methods ----------*/
     // Start is called before the first frame update
@@ -58,11 +57,11 @@ public class MainMenuMgr : MonoBehaviour
     // Helper method that sets data given an index value
     void SetData(int index)
     {
-        selectedLevelName.text = levels[index].level.name;
-        selectedLevelThumbnail.sprite = levels[index].thumbnail;
-        lockOverlay.gameObject.SetActive(!levels[index].level.isUnlocked);
-        startButton.gameObject.SetActive(levels[index].level.isUnlocked);
-        lockText.gameObject.SetActive(!levels[index].level.isUnlocked);
+        selectedLevelName.text = levels[index].name;
+        selectedLevelThumbnail.sprite = levelThumbnails[index];
+        lockOverlay.gameObject.SetActive(!levels[index].isUnlocked);
+        startButton.gameObject.SetActive(levels[index].isUnlocked);
+        lockText.gameObject.SetActive(!levels[index].isUnlocked);
     }
 
 
@@ -109,9 +108,9 @@ public class MainMenuMgr : MonoBehaviour
 
 
     // Loads the level from the List that corresponds to the given index
-    public void LoadLevel(int index)
+    public void LoadLevel()
     {
-        SceneManager.LoadSceneAsync(levels[selectedLevelIndex].level.sceneName);
+        SceneManager.LoadSceneAsync(levels[selectedLevelIndex].sceneName);
     }
 
 

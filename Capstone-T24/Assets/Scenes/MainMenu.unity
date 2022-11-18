@@ -1334,8 +1334,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 147005173195184769, guid: 0288533a4b319674fb96abb9efd87b9b, type: 3}
-  - {fileID: 147005173195184769, guid: d1b5558e49ecce543b94303ec6dc52a8, type: 3}
+  - {fileID: 5696910865879993378, guid: 9a96b8175177d4a4b8443f19587cddf4, type: 3}
+  - {fileID: 4807672668147142197, guid: 67b4e3f909cb2c94bbc3b4c8a75773be, type: 3}
+  levelThumbnails:
+  - {fileID: 21300000, guid: 90e5356b6aae5b0429e86aaf4665a537, type: 3}
+  - {fileID: 21300000, guid: 81a58ed00e092ca49ae77d4df65c4be6, type: 3}
   selectedLevelIndex: 0
   selectedLevelName: {fileID: 59357037}
   selectedLevelThumbnail: {fileID: 1388124281}
