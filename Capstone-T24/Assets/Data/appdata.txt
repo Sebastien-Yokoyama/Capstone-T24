@@ -1,10 +1,1 @@
-{
-	"level": [
-		{"name": "Main Menu",
-		"sceneName": "MainMenu",
-		"isUnlocked": 1},
-		{"name": "Test Scene",
-		"sceneName": "TestScene",
-		"isUnlocked": 0}
-	]
-}
+{"level":[{"name":"Main Menu","sceneName":"MainMenu","isUnlocked":true},{"name":"Test Scene","sceneName":"TestScene","isUnlocked":false}]}

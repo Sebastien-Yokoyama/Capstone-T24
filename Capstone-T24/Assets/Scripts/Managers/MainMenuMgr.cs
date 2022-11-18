@@ -39,6 +39,9 @@ public class MainMenuMgr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Load data
+        JSONReader.inst.ReadFile();
+
         // Initialize Selected Level to be 0
         selectedLevelIndex = 0;
 

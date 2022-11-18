@@ -7,11 +7,22 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class JSONReader : MonoBehaviour
 {
+    /*---------- Awake ----------*/
+    // Static Instance of MainMenuMgr for global usage
+    public static JSONReader inst;
+    private void Awake()
+    {
+        inst = this;
+    }
+
+
     public TextAsset textJSON;
+    public string dataString;
 
 
     [System.Serializable]
@@ -27,14 +38,19 @@ public class JSONReader : MonoBehaviour
         ReadFile();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ReadFile()
     {
         MainMenuMgr.inst.levels = JsonUtility.FromJson<LevelList>(textJSON.text).level;
+    }
+
+    public void WriteFile()
+    {
+        LevelList myLevelList = new LevelList();
+        myLevelList.level = MainMenuMgr.inst.levels;
+        string output = JsonUtility.ToJson(myLevelList);
+
+        //File.WriteAllText(Application.dataPath + "/appdata.txt", output);
+        File.WriteAllText("Assets/Data/appdata.txt", output);
     }
 }
