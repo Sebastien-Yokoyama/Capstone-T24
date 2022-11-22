@@ -64,6 +64,7 @@ public class PortalVR : PortalTraveller
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.P))
         {
             Cursor.lockState = CursorLockMode.None;
@@ -76,7 +77,7 @@ public class PortalVR : PortalTraveller
             Cursor.visible = true;
             disabled = !disabled;
         }
-
+        */
         if (disabled)
         {
             return;
