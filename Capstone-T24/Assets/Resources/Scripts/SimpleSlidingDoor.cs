@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class SimpleSlidingDoor : MonoBehaviour
 {
+    /// <summary>
+    /// Does this door open automatically when the player enters the trigger area?
+    /// </summary>
     public bool isAuto;
+    /// <summary>
+    /// Does this door open at all?
+    /// </summary>
+    public bool isStatic;
     public Animator anim;
     public bool canBeOpened;
 
@@ -26,7 +33,7 @@ public class SimpleSlidingDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" && isAuto)
+        if(other.tag == "Player" && isAuto && !isStatic)
         {
             OpenDoor();
         }
@@ -34,7 +41,7 @@ public class SimpleSlidingDoor : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && !isAuto)
+        if (other.tag == "Player" && !isAuto && !isStatic)
         {
             canBeOpened = true;
         }
@@ -43,7 +50,7 @@ public class SimpleSlidingDoor : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !isStatic)
         {
             CloseDoor();
             canBeOpened = false;
