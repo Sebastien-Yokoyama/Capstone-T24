@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 78
+  controlID: 156
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -76,7 +76,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,7 +95,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 271
-    height: 656
+    height: 657
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
@@ -113,24 +113,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 656
+    y: 657
     width: 1469
-    height: 291
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
+    height: 290
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 16}
   - {fileID: 21}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 6919
+  controlID: 126
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,11 +247,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1469
-    height: 656
+    height: 657
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 6920
+  controlID: 127
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimatorControllerTool
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -270,16 +270,16 @@ MonoBehaviour:
     x: 271
     y: 0
     width: 1198
-    height: 656
-  m_MinSize: {x: 102, y: 121}
+    height: 657
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -312,14 +312,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -2531401826547240766, guid: cb31788cc967e9240b2313227f60adc8, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1.4578923
+    - e00: 1.6123292
       e01: 0
       e02: 0
-      e03: -154.17914
+      e03: -368.84204
       e10: 0
-      e11: 1.4578923
+      e11: 1.6123292
       e12: 0
-      e13: 140.14693
+      e13: 43.961212
       e20: 0
       e21: 0
       e22: 1
@@ -374,7 +374,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 28974
+  m_LastSelectedObjectID: 29024
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -438,7 +438,7 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 1
   currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -660,7 +660,7 @@ MonoBehaviour:
   changesView:
     currentBranchHasUpdate: 0
     currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: main
@@ -672,395 +672,13 @@ MonoBehaviour:
       folders:
         keys:
         - Capstone-T24
-        - Capstone-T24\Assets
-        - Capstone-T24\Assets\ProBuilder Data
-        - Capstone-T24\Assets\Resources
-        - Capstone-T24\Assets\Resources\Animation
-        - Capstone-T24\Assets\Resources\Animation\SlidingDoors
-        - Capstone-T24\Assets\Resources\Materials
-        - Capstone-T24\Assets\Resources\Materials\Emissive
-        - Capstone-T24\Assets\Resources\Materials\Floor
-        - Capstone-T24\Assets\Resources\Materials\Prototype-Textures
-        - Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG
-        - Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light
-        - Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials
-        - Capstone-T24\Assets\Resources\Prefabs
-        - Capstone-T24\Assets\Resources\Prefabs\Hands
-        - Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1
-        - Capstone-T24\Assets\Resources\Prefabs\Static Objects
-        - Capstone-T24\Assets\Resources\Textures
-        - Capstone-T24\Assets\Resources\Textures\Floor
-        - Capstone-T24\Assets\Scenes
-        - Capstone-T24\Assets\Scenes\_LIVE
         - Capstone-T24\ProjectSettings
         - Capstone-T24\ProjectSettings\Packages
         - Capstone-T24\ProjectSettings\Packages\com.unity.probuilder
-        - Capstone-T24\UserSettings
-        - Capstone-T24\UserSettings\Layouts
         values:
         - path: Capstone-T24
           label: Capstone-T24
           level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets
-          label: Assets
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\ProBuilder Data
-          label: ProBuilder Data
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources
-          label: Resources
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Animation
-          label: Animation
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors
-          label: SlidingDoors
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials
-          label: Materials
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials\Emissive
-          label: Emissive
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials\Floor
-          label: Floor
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures
-          label: Prototype-Textures
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG
-          label: PNG
-          level: 5
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light
-          label: Light
-          level: 6
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials
-          label: Materials
-          level: 7
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Prefabs
-          label: Prefabs
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Prefabs\Hands
-          label: Hands
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1
-          label: HandsV1
-          level: 5
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Prefabs\Static Objects
-          label: Static Objects
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Textures
-          label: Textures
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Resources\Textures\Floor
-          label: Floor
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Scenes
-          label: Scenes
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\Assets\Scenes\_LIVE
-          label: _LIVE
-          level: 3
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -1130,42 +748,6 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Capstone-T24\UserSettings
-          label: UserSettings
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Capstone-T24\UserSettings\Layouts
-          label: Layouts
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -1212,1149 +794,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Capstone-T24\Assets
-        label: Assets
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\ProBuilder Data.meta
-        label: ProBuilder Data.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\ProBuilder Data.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-            Data.meta
-          projectPath: Assets\ProBuilder Data.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\ProBuilder Data
-        label: ProBuilder Data
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\ProBuilder Data\Default Color Palette.asset
-        label: Default Color Palette.asset
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\ProBuilder Data\Default Color Palette.asset
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-            Data\Default Color Palette.asset
-          projectPath: Assets\ProBuilder Data\Default Color Palette.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\ProBuilder Data\Default Color Palette.asset.meta
-        label: Default Color Palette.asset.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\ProBuilder Data\Default Color Palette.asset.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-            Data\Default Color Palette.asset.meta
-          projectPath: Assets\ProBuilder Data\Default Color Palette.asset.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\ProBuilder Data\Default Material Palette.asset
-        label: Default Material Palette.asset
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\ProBuilder Data\Default Material Palette.asset
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-            Data\Default Material Palette.asset
-          projectPath: Assets\ProBuilder Data\Default Material Palette.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\ProBuilder Data\Default Material Palette.asset.meta
-        label: Default Material Palette.asset.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\ProBuilder Data\Default Material Palette.asset.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-            Data\Default Material Palette.asset.meta
-          projectPath: Assets\ProBuilder Data\Default Material Palette.asset.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources
-        label: Resources
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Animation
-        label: Animation
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors
-        label: SlidingDoors
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-        label: SlideClosed.anim
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-          projectPath: Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-        label: SlideClosed.anim.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-          projectPath: Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-        label: SlideOpen.anim
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-          projectPath: Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-        label: SlideOpen.anim.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-          projectPath: Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-        label: SlidingDoor.controller
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-          projectPath: Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Capstone-T24\Assets\Resources\Materials
-        label: Materials
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Emissive
-        label: Emissive
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Emissive\BlueLight.mat
-        label: BlueLight.mat
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Emissive\BlueLight.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Emissive\BlueLight.mat
-          projectPath: Assets\Resources\Materials\Emissive\BlueLight.mat
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Capstone-T24\Assets\Resources\Materials\Floor.meta
-        label: Floor.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor.meta
-          projectPath: Assets\Resources\Materials\Floor.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor
-        label: Floor
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat
-        label: floor_blackwhite.mat
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat
-          projectPath: Assets\Resources\Materials\Floor\floor_blackwhite.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-        label: floor_blackwhite.mat.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-          projectPath: Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat
-        label: floor_dark.mat
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat
-          projectPath: Assets\Resources\Materials\Floor\floor_dark.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat.meta
-        label: floor_dark.mat.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat.meta
-          projectPath: Assets\Resources\Materials\Floor\floor_dark.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat
-        label: floor_engine.mat
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat
-          projectPath: Assets\Resources\Materials\Floor\floor_engine.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat.meta
-        label: floor_engine.mat.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat.meta
-          projectPath: Assets\Resources\Materials\Floor\floor_engine.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat
-        label: floor_plastitanium.mat
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat
-          projectPath: Assets\Resources\Materials\Floor\floor_plastitanium.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-        label: floor_plastitanium.mat.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-          projectPath: Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat
-        label: floor_white.mat
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat
-          projectPath: Assets\Resources\Materials\Floor\floor_white.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat.meta
-        label: floor_white.mat.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat.meta
-          projectPath: Assets\Resources\Materials\Floor\floor_white.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Glass.mat
-        label: Glass.mat
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Glass.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Glass.mat
-          projectPath: Assets\Resources\Materials\Glass.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Glass.mat.meta
-        label: Glass.mat.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Glass.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Glass.mat.meta
-          projectPath: Assets\Resources\Materials\Glass.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures
-        label: Prototype-Textures
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG
-        label: PNG
-        level: 5
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light
-        label: Light
-        level: 6
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials
-        label: Materials
-        level: 7
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-        label: texture_07.mat
-        level: 8
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-          projectPath: Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-        label: texture_07.mat.meta
-        level: 9
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-          projectPath: Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Prefabs
-        label: Prefabs
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Prefabs\Hands
-        label: Hands
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1
-        label: HandsV1
-        level: 5
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Left Hand Finished.prefab
-        label: Left Hand Finished.prefab
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Left Hand Finished.prefab
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Left
-            Hand Finished.prefab
-          projectPath: Assets\Resources\Prefabs\Hands\HandsV1\Left Hand Finished.prefab
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Right Hand Finished.prefab
-        label: Right Hand Finished.prefab
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Right Hand Finished.prefab
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Right
-            Hand Finished.prefab
-          projectPath: Assets\Resources\Prefabs\Hands\HandsV1\Right Hand Finished.prefab
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Capstone-T24\Assets\Resources\Prefabs\Static Objects
-        label: Static Objects
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Prefabs\Static Objects\Table.prefab
-        label: Table.prefab
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Prefabs\Static Objects\Table.prefab
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Static
-            Objects\Table.prefab
-          projectPath: Assets\Resources\Prefabs\Static Objects\Table.prefab
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Prefabs\Static Objects\Table.prefab.meta
-        label: Table.prefab.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Prefabs\Static Objects\Table.prefab.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Static
-            Objects\Table.prefab.meta
-          projectPath: Assets\Resources\Prefabs\Static Objects\Table.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures
-        label: Textures
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Textures\Floor.meta
-        label: Floor.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor.meta
-          projectPath: Assets\Resources\Textures\Floor.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor
-        label: Floor
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png
-        label: floor_blackwhite.png
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png
-          projectPath: Assets\Resources\Textures\Floor\floor_blackwhite.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-        label: floor_blackwhite.png.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-          projectPath: Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png
-        label: floor_dark.png
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png
-          projectPath: Assets\Resources\Textures\Floor\floor_dark.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png.meta
-        label: floor_dark.png.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png.meta
-          projectPath: Assets\Resources\Textures\Floor\floor_dark.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png
-        label: floor_engine.png
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png
-          projectPath: Assets\Resources\Textures\Floor\floor_engine.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png.meta
-        label: floor_engine.png.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png.meta
-          projectPath: Assets\Resources\Textures\Floor\floor_engine.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png
-        label: floor_plastitanium.png
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png
-          projectPath: Assets\Resources\Textures\Floor\floor_plastitanium.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-        label: floor_plastitanium.png.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-          projectPath: Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png
-        label: floor_white.png
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png
-          projectPath: Assets\Resources\Textures\Floor\floor_white.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png.meta
-        label: floor_white.png.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png.meta
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png.meta
-          projectPath: Assets\Resources\Textures\Floor\floor_white.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\Assets\Scenes
-        label: Scenes
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Scenes\_LIVE
-        label: _LIVE
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\Assets\Scenes\_LIVE\_MainMenu.unity
-        label: _MainMenu.unity
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Scenes\_LIVE\_MainMenu.unity
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Scenes\_LIVE\_MainMenu.unity
-          projectPath: Assets\Scenes\_LIVE\_MainMenu.unity
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Capstone-T24\Assets\Scenes\_LIVE\Lab1.unity
-        label: Lab1.unity
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\Assets\Scenes\_LIVE\Lab1.unity
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Scenes\_LIVE\Lab1.unity
-          projectPath: Assets\Scenes\_LIVE\Lab1.unity
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       - path: Capstone-T24\ProjectSettings
         label: ProjectSettings
         level: 1
@@ -2427,96 +866,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Capstone-T24\ProjectSettings\ShaderGraphSettings.asset
-        label: ShaderGraphSettings.asset
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\ProjectSettings\ShaderGraphSettings.asset
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\ProjectSettings\ShaderGraphSettings.asset
-          projectPath: ProjectSettings\ShaderGraphSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Capstone-T24\UserSettings
-        label: UserSettings
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\UserSettings\EditorUserSettings.asset
-        label: EditorUserSettings.asset
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\UserSettings\EditorUserSettings.asset
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\UserSettings\EditorUserSettings.asset
-          projectPath: UserSettings\EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Capstone-T24\UserSettings\Layouts
-        label: Layouts
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Capstone-T24\UserSettings\Layouts\default-2021.dwlt
-        label: default-2021.dwlt
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Capstone-T24\UserSettings\Layouts\default-2021.dwlt
-          fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\UserSettings\Layouts\default-2021.dwlt
-          projectPath: UserSettings\Layouts\default-2021.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -2537,306 +886,21 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Capstone-T24\Assets\ProBuilder Data.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-        Data.meta
-      projectPath: Assets\ProBuilder Data.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\ProBuilder Data\Default Color Palette.asset
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-        Data\Default Color Palette.asset
-      projectPath: Assets\ProBuilder Data\Default Color Palette.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\ProBuilder Data\Default Color Palette.asset.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-        Data\Default Color Palette.asset.meta
-      projectPath: Assets\ProBuilder Data\Default Color Palette.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\ProBuilder Data\Default Material Palette.asset
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-        Data\Default Material Palette.asset
-      projectPath: Assets\ProBuilder Data\Default Material Palette.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\ProBuilder Data\Default Material Palette.asset.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\ProBuilder
-        Data\Default Material Palette.asset.meta
-      projectPath: Assets\ProBuilder Data\Default Material Palette.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-      projectPath: Assets\Resources\Animation\SlidingDoors\SlideClosed.anim
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-      projectPath: Assets\Resources\Animation\SlidingDoors\SlideClosed.anim.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-      projectPath: Assets\Resources\Animation\SlidingDoors\SlideOpen.anim
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-      projectPath: Assets\Resources\Animation\SlidingDoors\SlideOpen.anim.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-      projectPath: Assets\Resources\Animation\SlidingDoors\SlidingDoor.controller
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Capstone-T24\Assets\Resources\Materials\Emissive\BlueLight.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Emissive\BlueLight.mat
-      projectPath: Assets\Resources\Materials\Emissive\BlueLight.mat
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Capstone-T24\Assets\Resources\Materials\Floor.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor.meta
-      projectPath: Assets\Resources\Materials\Floor.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat
-      projectPath: Assets\Resources\Materials\Floor\floor_blackwhite.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-      projectPath: Assets\Resources\Materials\Floor\floor_blackwhite.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat
-      projectPath: Assets\Resources\Materials\Floor\floor_dark.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_dark.mat.meta
-      projectPath: Assets\Resources\Materials\Floor\floor_dark.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat
-      projectPath: Assets\Resources\Materials\Floor\floor_engine.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_engine.mat.meta
-      projectPath: Assets\Resources\Materials\Floor\floor_engine.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat
-      projectPath: Assets\Resources\Materials\Floor\floor_plastitanium.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-      projectPath: Assets\Resources\Materials\Floor\floor_plastitanium.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat
-      projectPath: Assets\Resources\Materials\Floor\floor_white.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Floor\floor_white.mat.meta
-      projectPath: Assets\Resources\Materials\Floor\floor_white.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Glass.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Glass.mat
-      projectPath: Assets\Resources\Materials\Glass.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Glass.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Glass.mat.meta
-      projectPath: Assets\Resources\Materials\Glass.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-      projectPath: Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-      projectPath: Assets\Resources\Materials\Prototype-Textures\PNG\Light\Materials\texture_07.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Left Hand Finished.prefab
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Left
-        Hand Finished.prefab
-      projectPath: Assets\Resources\Prefabs\Hands\HandsV1\Left Hand Finished.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Right Hand Finished.prefab
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Hands\HandsV1\Right
-        Hand Finished.prefab
-      projectPath: Assets\Resources\Prefabs\Hands\HandsV1\Right Hand Finished.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Capstone-T24\Assets\Resources\Prefabs\Static Objects\Table.prefab
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Static
-        Objects\Table.prefab
-      projectPath: Assets\Resources\Prefabs\Static Objects\Table.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Prefabs\Static Objects\Table.prefab.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Prefabs\Static
-        Objects\Table.prefab.meta
-      projectPath: Assets\Resources\Prefabs\Static Objects\Table.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor.meta
-      projectPath: Assets\Resources\Textures\Floor.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png
-      projectPath: Assets\Resources\Textures\Floor\floor_blackwhite.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-      projectPath: Assets\Resources\Textures\Floor\floor_blackwhite.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png
-      projectPath: Assets\Resources\Textures\Floor\floor_dark.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_dark.png.meta
-      projectPath: Assets\Resources\Textures\Floor\floor_dark.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png
-      projectPath: Assets\Resources\Textures\Floor\floor_engine.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_engine.png.meta
-      projectPath: Assets\Resources\Textures\Floor\floor_engine.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png
-      projectPath: Assets\Resources\Textures\Floor\floor_plastitanium.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-      projectPath: Assets\Resources\Textures\Floor\floor_plastitanium.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png
-      projectPath: Assets\Resources\Textures\Floor\floor_white.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png.meta
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Resources\Textures\Floor\floor_white.png.meta
-      projectPath: Assets\Resources\Textures\Floor\floor_white.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\Assets\Scenes\_LIVE\_MainMenu.unity
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Scenes\_LIVE\_MainMenu.unity
-      projectPath: Assets\Scenes\_LIVE\_MainMenu.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Capstone-T24\Assets\Scenes\_LIVE\Lab1.unity
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\Assets\Scenes\_LIVE\Lab1.unity
-      projectPath: Assets\Scenes\_LIVE\Lab1.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
     - path: Capstone-T24\ProjectSettings\Packages\com.unity.probuilder\Settings.json
       fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\ProjectSettings\Packages\com.unity.probuilder\Settings.json
       projectPath: ProjectSettings\Packages\com.unity.probuilder\Settings.json
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Capstone-T24\ProjectSettings\ShaderGraphSettings.asset
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\ProjectSettings\ShaderGraphSettings.asset
-      projectPath: ProjectSettings\ShaderGraphSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Capstone-T24\UserSettings\EditorUserSettings.asset
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\UserSettings\EditorUserSettings.asset
-      projectPath: UserSettings\EditorUserSettings.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Capstone-T24\UserSettings\Layouts\default-2021.dwlt
-      fullPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24\UserSettings\Layouts\default-2021.dwlt
-      projectPath: UserSettings\Layouts\default-2021.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 47 changed files
+    changedFilesText: 1 changed file
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2022-11-23T14:37:22.449-08:00
+      updatedTimeString: 2022-11-23T19:31:59.695-08:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2022-11-23T15:07:49.120-08:00
+      updatedTimeString: 2022-11-23T20:11:32.547-08:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2022-11-23T15:07:49.221-08:00
+      updatedTimeString: 2022-11-23T19:32:04.535-08:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -23865,13 +21929,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2022-11-23T10:29:40.639-08:00
+    updatedTimeString: 2022-11-23T19:31:59.695-08:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2022-11-23T15:05:01.569-08:00
+    updatedTimeString: 2022-11-23T20:11:32.589-08:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2022-11-23T15:05:01.512-08:00
+    updatedTimeString: 2022-11-23T20:11:32.547-08:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -23889,7 +21953,7 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
+  repositoryProgressValue: 0
   repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
@@ -23915,9 +21979,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 729
+    y: 730
     width: 1468
-    height: 270
+    height: 269
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -23935,22 +21999,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs/Hands/HandsV1
+    - Assets/Resources/Materials/Floor
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Prefabs/Hands/HandsV1
+  - Assets/Resources/Materials/Floor
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\cody\Unity Projects\Capstone\Capstone-T24\Capstone-T24
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 294}
-    m_SelectedIDs: f6890000
-    m_LastClickedID: 35318
-    m_ExpandedIDs: 0000000076730000787300007a7300007c7300007e73000080730000827300008473000086730000a4730000b473000000ca9a3b
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: a8730000
+    m_LastClickedID: 29608
+    m_ExpandedIDs: 0000000086730000887300008a7300008c7300008e730000907300009273000094730000967300009873000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -23978,7 +22042,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000076730000787300007a7300007c7300007e73000080730000827300008473000086730000
+    m_ExpandedIDs: 0000000086730000887300008a7300008c7300008e7300009073000092730000947300009673000098730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -24003,8 +22067,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 3e710000
+    m_LastClickedInstanceID: 28990
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000042740000
     m_RenameOverlay:
@@ -24098,7 +22162,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 270
-    height: 635
+    height: 636
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -24106,9 +22170,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c730000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28fbffff88700000a27000005071000086710000
+      m_ExpandedIDs: 28fbffffb4700000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -24155,7 +22219,7 @@ MonoBehaviour:
     x: 271
     y: 73
     width: 1196
-    height: 635
+    height: 636
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -24357,9 +22421,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.8512918, y: 3.039174, z: 1.2692074}
+    m_Target: {x: -1.988981, y: 3.541575, z: 1.307804}
     speed: 2
-    m_Value: {x: -0.8512918, y: 3.039174, z: 1.2692074}
+    m_Value: {x: -1.988981, y: 3.541575, z: 1.307804}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -24382,10 +22446,10 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -24406,13 +22470,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08086658, y: -0.25885105, z: 0.023644762, w: -0.9625398}
+    m_Target: {x: -0.3553363, y: 0.09611327, z: -0.033601172, w: -0.92960453}
     speed: 2
-    m_Value: {x: -0.080842935, y: -0.25877535, z: 0.023637848, w: -0.9622583}
+    m_Value: {x: -0.3565885, y: 0.096024506, z: -0.03373212, w: -0.9287013}
   m_Size:
-    m_Target: 1.0133942
+    m_Target: 1.2628735
     speed: 2
-    m_Value: 1.0133942
+    m_Value: 1.2084914
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -24550,9 +22614,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 729
+    y: 730
     width: 1468
-    height: 270
+    height: 269
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
