@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ColorChanger : MonoBehaviour
@@ -8,6 +9,8 @@ public class ColorChanger : MonoBehaviour
     private MeshRenderer meshRenderer = null;
     private XRBaseInteractable interactable = null;
     private Material originalMaterial = null;
+
+    public bool doOnce = false;
 
     private void Awake()
     {
@@ -33,5 +36,22 @@ public class ColorChanger : MonoBehaviour
     private void SetOriginalMaterial(XRBaseInteractor interactor)
     {
         meshRenderer.material = originalMaterial;
+    }
+
+    public void RemoveListeners(float time)
+    {
+        if (!doOnce)
+        {
+            StartCoroutine(RemoveListenAtTime(time));
+        }
+        doOnce = true;
+    }
+
+    IEnumerator RemoveListenAtTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        interactable.onHoverEntered.RemoveListener(SetSelectMaterial);
+        interactable.onHoverExited.RemoveListener(SetOriginalMaterial);
     }
 }
