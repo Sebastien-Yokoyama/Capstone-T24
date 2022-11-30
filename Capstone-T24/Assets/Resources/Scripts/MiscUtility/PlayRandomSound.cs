@@ -52,7 +52,7 @@ public class PlayRandomSound : MonoBehaviour
     {
         if (!doOnce2)
         {
-            StartCoroutine(TimedRandom(time));
+            StartCoroutine(TimedSpecific(time));
         }
         doOnce2 = true;
     }
