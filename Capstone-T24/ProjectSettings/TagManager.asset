@@ -14,9 +14,9 @@ TagManager:
   - Grabbable
   - Player
   - Hands
-  - 
-  - 
-  - 
+  - LHPhys
+  - RHPhys
+  - NonPhysHand
   - 
   - 
   - 
