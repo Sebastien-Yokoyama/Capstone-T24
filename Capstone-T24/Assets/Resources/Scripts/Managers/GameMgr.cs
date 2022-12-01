@@ -28,6 +28,10 @@ public class GameMgr : MonoBehaviour
     /// Teleport Movement = True
     /// </summary>
     public bool movementMode = false;
+    /// <summary>
+    /// Should the Tunneling Vignette be active? 
+    /// </summary>
+    public bool usingVignette = false;
 
 
     // Start is called before the first frame update
@@ -71,6 +75,9 @@ public class GameMgr : MonoBehaviour
             XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = false;
             // Enable the Teleport Movement Provider
             XROrigin.GetComponent<TeleportationProvider>().enabled = true;
+            if (usingVignette)
+                // Apply delay so vignette works properly
+                XROrigin.GetComponent<TeleportationProvider>().delayTime = 0.3f;
         }
         else // Continuous Movement
         {
@@ -78,6 +85,20 @@ public class GameMgr : MonoBehaviour
             XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = true;
             // Disable the Teleport Movement Provider
             XROrigin.GetComponent<TeleportationProvider>().enabled = false;
+            if (usingVignette)
+                // Reset delay
+                XROrigin.GetComponent<TeleportationProvider>().delayTime = 0.0f;
         }
+    }
+
+    /// <summary>
+    /// Toggles if the Tunneling Vignette is on or off.
+    /// </summary>
+    public void ChangeVignetteUsage()
+    {
+        usingVignette = !usingVignette;
+
+        // May not work for every provider, given there are more than one.
+        XROrigin.GetComponentInChildren<TunnelingVignetteController>().GetComponent<LocomotionVignetteProvider>().enabled = usingVignette;
     }
 }
