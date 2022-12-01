@@ -976,6 +976,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Teleport Activate",
+                    "type": "Button",
+                    "id": "f1817e43-8ee1-48bb-97a8-def322244b11",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1088,6 +1097,17 @@
                     "action": "Button Snap Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "159f67fa-5507-4129-81ef-306a569b6852",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Teleport Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameMgr : MonoBehaviour
 {
@@ -18,6 +19,15 @@ public class GameMgr : MonoBehaviour
     {
         inst = this;
     }
+
+    // Variables
+    public GameObject XROrigin;
+    /// <summary>
+    /// Defines which movement method is currently being used.
+    /// Continuous Movement = False
+    /// Teleport Movement = True
+    /// </summary>
+    public bool movementMode = false;
 
 
     // Start is called before the first frame update
@@ -32,7 +42,9 @@ public class GameMgr : MonoBehaviour
         
     }
 
-    // Called when the player completes the current level
+    /// <summary>
+    /// Called when the player completes the current level
+    /// </summary>
     public void CompleteCurrentLevel()
     {
         // Check out-of-bounds
@@ -44,5 +56,28 @@ public class GameMgr : MonoBehaviour
 
         // Save data
         JSONReader.inst.WriteFile();
+    }
+
+    /// <summary>
+    /// Changes which method of movement the player will use. (bool)
+    /// </summary>
+    public void ChangeMovementMethod()
+    {
+        movementMode = !movementMode;
+
+        if (movementMode) // Teleport Movement
+        {
+            // Disable Continuous Movement Provider
+            XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = false;
+            // Enable the Teleport Movement Provider
+            XROrigin.GetComponent<TeleportationProvider>().enabled = true;
+        }
+        else // Continuous Movement
+        {
+            // Enable Continuous Movement Provider
+            XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = true;
+            // Disable the Teleport Movement Provider
+            XROrigin.GetComponent<TeleportationProvider>().enabled = false;
+        }
     }
 }
