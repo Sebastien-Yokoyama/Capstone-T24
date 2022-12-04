@@ -32,6 +32,14 @@ public class GameMgr : MonoBehaviour
     /// Should the Tunneling Vignette be active? 
     /// </summary>
     public bool usingVignette = false;
+    /// <summary>
+    /// Completely disable/enable movement.
+    /// </summary>
+    public bool disabledMovement = false;
+    /// <summary>
+    /// Hand that the user teleports with, has ray components in it.
+    /// </summary>
+    public GameObject teleportHand;
 
 
     // Start is called before the first frame update
@@ -67,6 +75,11 @@ public class GameMgr : MonoBehaviour
     /// </summary>
     public void ChangeMovementMethod()
     {
+        if (disabledMovement) // Maybe change this later
+        {
+            return;
+        }
+
         movementMode = !movementMode;
 
         if (movementMode) // Teleport Movement
@@ -75,6 +88,8 @@ public class GameMgr : MonoBehaviour
             XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = false;
             // Enable the Teleport Movement Provider
             XROrigin.GetComponent<TeleportationProvider>().enabled = true;
+            XROrigin.GetComponent<ActivateTeleportationRay>().enabled = true;
+            teleportHand.SetActive(true);
             if (usingVignette)
                 // Apply delay so vignette works properly
                 XROrigin.GetComponent<TeleportationProvider>().delayTime = 0.3f;
@@ -85,6 +100,8 @@ public class GameMgr : MonoBehaviour
             XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = true;
             // Disable the Teleport Movement Provider
             XROrigin.GetComponent<TeleportationProvider>().enabled = false;
+            XROrigin.GetComponent<ActivateTeleportationRay>().enabled = false;
+            teleportHand.SetActive(false);
             if (usingVignette)
                 // Reset delay
                 XROrigin.GetComponent<TeleportationProvider>().delayTime = 0.0f;
@@ -100,5 +117,40 @@ public class GameMgr : MonoBehaviour
 
         // May not work for every provider, given there are more than one.
         XROrigin.GetComponentInChildren<TunnelingVignetteController>().GetComponent<LocomotionVignetteProvider>().enabled = usingVignette;
+    }
+
+    /// <summary>
+    /// Disables all player movement (providers).
+    /// </summary>
+    public void DisableAllMovement(bool includeTurning)
+    {
+        XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = false;
+        XROrigin.GetComponent<TeleportationProvider>().enabled = false;
+        XROrigin.GetComponent<ActivateTeleportationRay>().enabled = false;
+        teleportHand.SetActive(false);
+
+        if (includeTurning)
+        {
+            XROrigin.GetComponent<ContinuousTurnProviderBase>().enabled = false;
+            XROrigin.GetComponent<SnapTurnProviderBase>().enabled = false;
+        }
+    }
+
+    public void EnableMovement()
+    {
+        if (movementMode) // Teleport Movement
+        {
+            XROrigin.GetComponent<ContinuousMoveProviderBase>().enabled = true;
+            XROrigin.GetComponent<ActivateTeleportationRay>().enabled = true;
+            teleportHand.SetActive(true);
+        }
+        else // Continuous Movement
+        {
+            XROrigin.GetComponent<TeleportationProvider>().enabled = true;
+        }
+
+        // Turning
+        XROrigin.GetComponent<ContinuousTurnProviderBase>().enabled = true;
+        XROrigin.GetComponent<SnapTurnProviderBase>().enabled = true;
     }
 }
