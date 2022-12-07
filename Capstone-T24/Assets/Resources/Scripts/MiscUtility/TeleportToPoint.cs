@@ -32,7 +32,7 @@ public class TeleportToPoint : MonoBehaviour
     public void TeleportInstantlyTo(int pointIndex)
     {
         player.transform.position = teleportPoints[pointIndex].transform.position;
-        player.transform.rotation = teleportPoints[pointIndex].transform.rotation;
+        player.transform.localRotation = teleportPoints[pointIndex].transform.rotation;
 
         doOnce = false;
     }
