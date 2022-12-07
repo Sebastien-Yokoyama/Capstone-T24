@@ -19,6 +19,8 @@ public class SimpleSlidingDoor : MonoBehaviour
     public AudioClip openSound;
     public AudioClip closeSound;
 
+    private bool doOnce = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,5 +68,28 @@ public class SimpleSlidingDoor : MonoBehaviour
     {
         anim.SetBool("Open", false);
         audioSource.PlayOneShot(closeSound);
+    }
+
+    public void OpenDirectly()
+    {
+        OpenDoor();
+    }
+
+    public void OpenDirectlyAfterTime(float time)
+    {
+        if (doOnce)
+        {
+            return;
+        }
+        doOnce = true;
+        StartCoroutine(OpenTimed(time));
+    }
+
+    IEnumerator OpenTimed(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        OpenDirectly();
+        doOnce = false;
     }
 }
