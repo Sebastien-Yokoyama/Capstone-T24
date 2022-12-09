@@ -8,6 +8,8 @@ public class SimpleSlidingCover : MonoBehaviour
     public bool doOnce = false;
     public Animator anim;
 
+    public bool specialValidate = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class SimpleSlidingCover : MonoBehaviour
 
     public void FlipAtTime(float time)
     {
-        if (!doOnce)
+        if (!doOnce && specialValidate)
         {
             StartCoroutine(FlipTime(time));
         }
@@ -43,5 +45,10 @@ public class SimpleSlidingCover : MonoBehaviour
         {
             anim.SetBool("isOpen", false);
         }
+    }
+
+    public void Validate()
+    {
+        specialValidate = true;
     }
 }
