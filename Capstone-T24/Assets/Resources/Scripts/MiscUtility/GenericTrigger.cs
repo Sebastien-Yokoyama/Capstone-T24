@@ -8,18 +8,10 @@ public class GenericTrigger : MonoBehaviour
     //[Tooltip("The ID of the event that this trigger will cause when activated.")]
     //public int eventToTrigger;
 
-    public string targetTag = null;
+    public string targetTag = "Player";
 
     public UnityEvent onTagEnter;
     public UnityEvent onTagExit;
-
-    public void Start()
-    {
-        if(targetTag == null) // If unset, default is player
-        {
-            targetTag = "Player";
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {

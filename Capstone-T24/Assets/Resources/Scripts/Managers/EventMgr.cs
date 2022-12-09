@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EventMgr : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class EventMgr : MonoBehaviour
     {
         inst = this;
     }
+
+    /// <summary>
+    /// The event that ends the intro sequence.
+    /// </summary>
+    public UnityEvent endIntroSequence;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +29,15 @@ public class EventMgr : MonoBehaviour
         
     }
 
-    IEnumerable EndOfIntroSequence()
+    public void BeginEndIntroSequence(float time)
     {
+        StartCoroutine(EndOfIntroSequence(time));
+    }
 
-        yield return new WaitForEndOfFrame();
+    IEnumerator EndOfIntroSequence(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        endIntroSequence.Invoke();
     }
 }

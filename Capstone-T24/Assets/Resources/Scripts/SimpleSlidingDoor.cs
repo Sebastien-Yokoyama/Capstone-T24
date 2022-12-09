@@ -92,4 +92,14 @@ public class SimpleSlidingDoor : MonoBehaviour
         OpenDirectly();
         doOnce = false;
     }
+
+    public void DisableDoor()
+    {
+        isStatic = true;
+    }
+
+    public void EnableDoor()
+    {
+        isStatic = false;
+    }
 }
