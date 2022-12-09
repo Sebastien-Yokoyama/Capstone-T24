@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameMgr : MonoBehaviour
@@ -59,15 +60,21 @@ public class GameMgr : MonoBehaviour
     /// </summary>
     public void CompleteCurrentLevel()
     {
-        // Check out-of-bounds
-        if (MainMenuMgr.inst.selectedLevelIndex < MainMenuMgr.inst.levels.Count)
+        // Load data from file
+        DataMgr.inst.DeserializeJson();
+
+        // Overwrite data
+        for(int i = 0; i < DataMgr.inst.levelList.Count; i++)
         {
-            // Set next level to be unlocked
-            MainMenuMgr.inst.levels[MainMenuMgr.inst.selectedLevelIndex + 1].isUnlocked = true;
+            // Unlock next level, if it is not the last level in the game
+            if ((DataMgr.inst.levelList[i].sceneName == SceneManager.GetActiveScene().name) && (i + 1 < DataMgr.inst.levelList.Count))
+            {
+                DataMgr.inst.levelList[i + 1].isUnlocked = true;
+            }
         }
 
-        // Save data
-        JSONReader.inst.WriteFile();
+        // Save data to file
+        DataMgr.inst.SerializeJson();
     }
 
     /// <summary>
