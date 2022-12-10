@@ -60,6 +60,9 @@ public class GameMgr : MonoBehaviour
     /// </summary>
     public void CompleteCurrentLevel()
     {
+        // Used to load next level; will load main menu by default
+        string nextLevelName = "_MainMenu";
+
         // Load data from file
         DataMgr.inst.DeserializeJson();
 
@@ -70,11 +73,23 @@ public class GameMgr : MonoBehaviour
             if ((DataMgr.inst.levelList[i].sceneName == SceneManager.GetActiveScene().name) && (i + 1 < DataMgr.inst.levelList.Count))
             {
                 DataMgr.inst.levelList[i + 1].isUnlocked = true;
+                nextLevelName = DataMgr.inst.levelList[i + 1].sceneName;    // If there are more levels, load those instead of main menu
             }
         }
 
         // Save data to file
         DataMgr.inst.SerializeJson();
+
+        // Load the next level
+        if (nextLevelName != "_MainMenu")
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextLevelName));
+        }
+        // If no more levels, return to main menu
+        else
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextLevelName));
+        }
     }
 
     /// <summary>
