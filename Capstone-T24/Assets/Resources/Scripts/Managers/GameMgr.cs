@@ -81,15 +81,7 @@ public class GameMgr : MonoBehaviour
         DataMgr.inst.SerializeJson();
 
         // Load the next level
-        if (nextLevelName != "_MainMenu")
-        {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextLevelName));
-        }
-        // If no more levels, return to main menu
-        else
-        {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextLevelName));
-        }
+       SceneManager.LoadSceneAsync(nextLevelName);
     }
 
     /// <summary>
