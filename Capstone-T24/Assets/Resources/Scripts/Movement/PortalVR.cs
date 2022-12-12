@@ -78,11 +78,15 @@ public class PortalVR : PortalTraveller
             disabled = !disabled;
         }
         */
+
+        //float currentSpeed = controller.velocity.magnitude;
+
         if (disabled)
         {
             return;
         }
 
+        /*
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         Vector3 inputDir = new Vector3(input.x, 0, input.y).normalized;
@@ -132,6 +136,7 @@ public class PortalVR : PortalTraveller
 
         transform.eulerAngles = Vector3.up * smoothYaw;
         cam.transform.localEulerAngles = Vector3.right * smoothPitch;
+        */
 
     }
 

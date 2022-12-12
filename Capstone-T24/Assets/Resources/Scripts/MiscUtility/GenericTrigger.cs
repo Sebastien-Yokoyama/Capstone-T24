@@ -13,7 +13,7 @@ public class GenericTrigger : MonoBehaviour
     public UnityEvent onTagEnter;
     public UnityEvent onTagExit;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         // Check if the entering collider has the target tag.
         if (other.tag == targetTag)
@@ -23,7 +23,7 @@ public class GenericTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         // Check if the exiting collider has the target tag.
         if (other.tag == targetTag)
