@@ -9425,6 +9425,7 @@ Transform:
   - {fileID: 1191774342}
   - {fileID: 1305557717}
   - {fileID: 1187365005}
+  - {fileID: 1723450014}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80301,6 +80302,51 @@ SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 109434733571648788, guid: 6c2509c76b281144cb0099fc45f17a09, type: 3}
   m_PrefabInstance: {fileID: 1910493654}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1723450013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723450014}
+  - component: {fileID: 1723450015}
+  m_Layer: 0
+  m_Name: DataMgr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1723450014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723450013}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 63257383}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723450015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723450013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1bc91adb6447f4aa897e805c048565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelList: []
 --- !u!1 &1745896833
 GameObject:
   m_ObjectHideFlags: 0
@@ -84491,9 +84537,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1841239884}
-        m_TargetAssemblyTypeName: DEBUG_EndScene, Assembly-CSharp
-        m_MethodName: StopAfterTime
+      - m_Target: {fileID: 1841239883}
+        m_TargetAssemblyTypeName: EventMgr, Assembly-CSharp
+        m_MethodName: EndSceneAfterTime
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -84508,6 +84554,22 @@ MonoBehaviour:
       m_Calls: []
   eventFromStart: 0
   eventFromStartTime: 0
+  gameMgr: {fileID: 1318552481}
+  tutorialArrival:
+    m_PersistentCalls:
+      m_Calls: []
+  lookCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  moveCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  grabCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  startChecking: 0
+  onlyOnce: 0
+  mainCamera: {fileID: 0}
 --- !u!114 &1841239884
 MonoBehaviour:
   m_ObjectHideFlags: 0

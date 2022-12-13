@@ -34,7 +34,18 @@ public class EventMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (startChecking)
+        {
+            if (!onlyOnce)
+            {
+                if (mainCamera.GetComponent<IsLookingAt>().isLooking) // Player looking at specific object
+                {
+                    lookCompleted.Invoke();
+                    onlyOnce = true;
+                    startChecking = false;
+                }
+            }
+        }
     }
 
     public void BeginEndIntroSequence(float time)
@@ -54,6 +65,66 @@ public class EventMgr : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-        timedFromStart.Invoke();
+        if(id == 1)
+        {
+            timedFromStart.Invoke();
+        }
+        else if (id == 2)
+        {
+            tutorialArrival.Invoke();
+        }
+    }
+
+    public void EndSceneAfterTime(float time)
+    {
+        StartCoroutine(EndSceneTime(time));
+    }
+
+    public GameObject gameMgr;
+
+    IEnumerator EndSceneTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        gameMgr.GetComponent<GameMgr>().CompleteCurrentLevel();
+    }
+
+
+    // Tutorial Events
+
+    public UnityEvent tutorialArrival;
+
+    public UnityEvent lookCompleted;
+
+    public UnityEvent moveCompleted;
+
+    public UnityEvent grabCompleted;
+
+    public bool startChecking = false;
+
+    public bool onlyOnce = false;
+
+    public GameObject mainCamera;
+
+    public void BeginCheckAfterTime(float time)
+    {
+        StartCoroutine(BeginCheckTime(time));
+    }
+
+    IEnumerator BeginCheckTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        startChecking = true;
+    }
+
+    public void MoveDoneGo()
+    {
+        moveCompleted.Invoke();
+    }
+
+    public void GrabComplete()
+    {
+        grabCompleted.Invoke(); 
     }
 }
