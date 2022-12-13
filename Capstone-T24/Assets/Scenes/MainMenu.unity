@@ -4477,6 +4477,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ddc5883273db547bf51865f9538bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  XROrigin: {fileID: 0}
+  movementMode: 0
+  usingVignette: 0
+  disabledMovement: 0
+  teleportHand: {fileID: 0}
 --- !u!4 &1235593910
 Transform:
   m_ObjectHideFlags: 0
@@ -6858,7 +6863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925447961}
   m_Layer: 5
-  m_Name: Main Menu
+  m_Name: Main Menu Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
