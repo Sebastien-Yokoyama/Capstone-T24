@@ -62018,7 +62018,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: abbe4014daf3d084e8d1a6b178fec616, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.9
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -84503,6 +84503,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  timedFromStart:
+    m_PersistentCalls:
+      m_Calls: []
+  eventFromStart: 0
+  eventFromStartTime: 0
 --- !u!114 &1841239884
 MonoBehaviour:
   m_ObjectHideFlags: 0
