@@ -18,6 +18,7 @@ public class DataMgr : MonoBehaviour
     private void Awake()
     {
         inst = this;
+        DeserializeJson();
     }
 
 

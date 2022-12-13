@@ -75,18 +75,23 @@ public class EventMgr : MonoBehaviour
         }
     }
 
+    public void SetString(string levelname)
+    {
+        nextLevel = levelname;
+    }
+
+    public string nextLevel = "_MainMenu";
+
     public void EndSceneAfterTime(float time)
     {
         StartCoroutine(EndSceneTime(time));
     }
 
-    public GameObject gameMgr;
-
     IEnumerator EndSceneTime(float time)
     {
         yield return new WaitForSeconds(time);
 
-        gameMgr.GetComponent<GameMgr>().CompleteCurrentLevel();
+        GameMgr.inst.LoadLevelDirect(nextLevel);
     }
 
 

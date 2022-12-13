@@ -90,6 +90,15 @@ public class GameMgr : MonoBehaviour
     }
 
     /// <summary>
+    /// Same as the above function but the level is specified.
+    /// </summary>
+    public void LoadLevelDirect(string sceneName)
+    {
+        // Load the next level
+        SceneManager.LoadSceneAsync(sceneName);
+    }
+
+    /// <summary>
     /// Changes which method of movement the player will use. (bool)
     /// </summary>
     public void ChangeMovementMethod()

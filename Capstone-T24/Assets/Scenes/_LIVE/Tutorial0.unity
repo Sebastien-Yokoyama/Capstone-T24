@@ -1779,7 +1779,7 @@ MonoBehaviour:
       m_Calls: []
   eventFromStart: 2
   eventFromStartTime: 1
-  gameMgr: {fileID: 1959333313}
+  nextLevel: _MainMenu
   tutorialArrival:
     m_PersistentCalls:
       m_Calls:
@@ -1986,14 +1986,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1959333315}
         m_TargetAssemblyTypeName: GameMgr, Assembly-CSharp
-        m_MethodName: CompleteCurrentLevel
-        m_Mode: 1
+        m_MethodName: LoadLevelDirect
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_FloatArgument: 0.1
+          m_StringArgument: Lab1
           m_BoolArgument: 0
         m_CallState: 2
   startChecking: 0
@@ -21468,6 +21468,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 249941072}
+        m_TargetAssemblyTypeName: EventMgr, Assembly-CSharp
+        m_MethodName: SetString
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Lab1
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 249941072}
         m_TargetAssemblyTypeName: EventMgr, Assembly-CSharp
