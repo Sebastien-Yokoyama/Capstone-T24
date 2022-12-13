@@ -52,7 +52,12 @@ public class GameMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Easy quit for debug purposes
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Game is quitting");  // Test msg
+        }
     }
 
     /// <summary>
