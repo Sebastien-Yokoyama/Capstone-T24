@@ -1,0 +1,12 @@
+newmtl White_Light
+Kd 1 1 1
+d 1
+
+newmtl Grey3
+Kd 0.2784314 0.2901961 0.3568628
+d 1
+
+newmtl Yellow_1
+Kd 1 0.9039522 0
+d 1
+

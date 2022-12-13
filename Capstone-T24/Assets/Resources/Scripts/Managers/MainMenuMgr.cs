@@ -39,8 +39,15 @@ public class MainMenuMgr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Load data
-        JSONReader.inst.ReadFile();
+        // Load data from file
+        //JSONReader.inst.ReadFile();
+        DataMgr.inst.DeserializeJson();
+        if (DataMgr.inst.levelList.Count > 0) { // If JSON file exists, overwrite level data
+            levels = DataMgr.inst.levelList;
+        }
+        else {  // Otherwise, create JSON file using default data
+            CreateJSON();
+        }
 
         // Initialize Selected Level to be 0
         selectedLevelIndex = 0;
@@ -66,7 +73,18 @@ public class MainMenuMgr : MonoBehaviour
         startButton.gameObject.SetActive(levels[index].isUnlocked);
         lockText.gameObject.SetActive(!levels[index].isUnlocked);
     }
-
+    
+    // Helper method that creates the level data JSON file if it doesn't exist
+    void CreateJSON()
+    {
+        /*
+         Since the file does not exist, the levelList in DataMgr will not have any initialized values.
+        Therefore, we can use the data from this manager, where it has been initialized with default values in the Unity Editor Inspection Window.
+        After saving the default data, we can now create the JSON file for later use.
+         */
+        DataMgr.inst.levelList = levels;
+        DataMgr.inst.SerializeJson();
+    }
 
     // Starts the game from the beginning
     public void StartGame()
