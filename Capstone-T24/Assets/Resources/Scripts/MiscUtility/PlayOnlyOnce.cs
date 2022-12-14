@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: PlayOnlyOnce.cs
+/* FILE DESCRIPTION: When called plays a sound only once. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: SimpleFadeText.cs
+/* FILE DESCRIPTION: When called, plays a fade in animation to the
+ * text object it is attached to.*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

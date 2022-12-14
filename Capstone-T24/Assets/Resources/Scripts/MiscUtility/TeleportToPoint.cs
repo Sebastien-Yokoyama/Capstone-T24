@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: TeleportToPoint.cs
+/* FILE DESCRIPTION: Script that can teleport the player to a specific point in the level. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿/*
+ * Originally developed by: VR with Andrew
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=5ZBkEYUyBWQ [possibly wrong]
+ * File Name: HandHider.cs
+ * File Description: Hides the users VR hands when grabbing an object.
+ */
+
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandHider : MonoBehaviour

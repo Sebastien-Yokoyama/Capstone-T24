@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: GFXMgr.cs
+/* FILE DESCRIPTION: Manages Special Effects. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

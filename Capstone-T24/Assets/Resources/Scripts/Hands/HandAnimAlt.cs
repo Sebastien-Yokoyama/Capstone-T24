@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: Fist Full of Shrimp
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=qQqNQ4y-cU8
+ * File Name: HandAnimAlt.cs
+ * File Description: One method of hand animations in VR. [UNUSED]
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

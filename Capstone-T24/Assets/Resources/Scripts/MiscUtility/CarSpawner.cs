@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: CarSpawner.cs
+/* FILE DESCRIPTION: Spawns the Car for Stretch2 scene. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

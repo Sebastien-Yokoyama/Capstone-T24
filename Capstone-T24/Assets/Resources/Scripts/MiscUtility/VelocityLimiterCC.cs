@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: VelocityLimiterCC.cs
+/* FILE DESCRIPTION: Code that DOESN'T limit a character controller's velocity. I hate this. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

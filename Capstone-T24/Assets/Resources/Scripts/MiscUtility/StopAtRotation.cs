@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: StopAtRotation.cs
+/* FILE DESCRIPTION: Script that sets an object to be kinematic when it has
+ * rotated to a specified degree. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

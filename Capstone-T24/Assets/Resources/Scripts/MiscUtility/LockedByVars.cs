@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: LockedByVars.cs
+/* FILE DESCRIPTION: Simple "lock" that relies on bools to be flipped to be
+ * unlocked, then triggers a UnityEvent. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Originally developed by: VR with Andrew [possibly wrong]
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=pmRwhE2hQ9g [possibly wrong]
+ * File Name: ColorChanger.cs
+ * File Description: Changes the color of an object when the user hovers their hand over it. Uses XR Toolkit.
+ */
+
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 

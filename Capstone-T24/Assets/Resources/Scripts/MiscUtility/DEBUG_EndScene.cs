@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: DEBUG_EndScene.cs
+/* FILE DESCRIPTION: Forcefully ends the scene after X amount of time. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

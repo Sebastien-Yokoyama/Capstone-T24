@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: VR with Andrew
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=pmRwhE2hQ9g
+ * File Name: CollisionButton.cs
+ * File Description: Provides code for a physics based button that can be used in VR.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

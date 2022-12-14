@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: SimpleSlidingCover.cs
+/* FILE DESCRIPTION: Used by the glass cover in Lab1, when called
+ * can do an animation that opens/closes it. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

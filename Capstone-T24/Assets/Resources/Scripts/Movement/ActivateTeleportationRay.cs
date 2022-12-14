@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: ActiveTeleportationRay.cs
+/* FILE DESCRIPTION: Quick code that enables/disables the visibility of the teleport ray when not in use. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: DisableGameObjects.cs
+/* FILE DESCRIPTION: When called can disable all gameObjects in it's list. Can also re-enable them. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

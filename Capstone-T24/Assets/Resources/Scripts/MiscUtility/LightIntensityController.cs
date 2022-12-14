@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: LightIntensityController.cs
+/* FILE DESCRIPTION: Given a light, a start point, and target point, will linearly
+ * scale the intensity of a light source over X amount of time. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

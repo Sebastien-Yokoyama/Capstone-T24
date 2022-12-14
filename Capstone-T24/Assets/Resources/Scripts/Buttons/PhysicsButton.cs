@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: Justin P Barnett
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=HFNzVMi5MSQ
+ * File Name: PhysicsButton.cs
+ * File Description: One method of interacting with buttons using physics in VR. [UNUSED]
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

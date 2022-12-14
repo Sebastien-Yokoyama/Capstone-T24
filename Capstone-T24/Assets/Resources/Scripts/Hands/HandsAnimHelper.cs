@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: [UNKNOWN]
+ * Modified  by: Cody Jackson
+ * Video: [UNKNOWN]
+ * File Name: HandsAnimHelper.cs
+ * File Description: Helper script for hand animations. [UNUSED]
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

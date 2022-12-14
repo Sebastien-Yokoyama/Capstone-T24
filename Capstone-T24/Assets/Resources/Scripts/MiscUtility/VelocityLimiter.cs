@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: VelocityLimiter.cs
+/* FILE DESCRIPTION: Code that mostly limits the velocity of a rigidbody. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: Justin P Barnett
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=RwGIyRy-Lss
+ * File Name: AdvancedHands.cs
+ * File Description: One method of advanced grabbing with hands in VR using joints.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

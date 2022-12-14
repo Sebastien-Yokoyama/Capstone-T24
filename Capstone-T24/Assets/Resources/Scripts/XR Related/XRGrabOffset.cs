@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: Valem Tutorials
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=CfzO6jvLY-w
+ * File Name: XRGrabOffset.cs
+ * File Description: A better version of the XRGrabInteractable that places the grab point at the edge of the object.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

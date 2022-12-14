@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: XRPOrtalTeleportRay.cs
+/* FILE DESCRIPTION: Code that supposedly enabled a teleport ray to go through portals.
+ * THIS FILE IS UNTESTED.*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

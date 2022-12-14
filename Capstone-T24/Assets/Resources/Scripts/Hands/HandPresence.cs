@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Originally developed by: Fist Full of Shrimp [could be wrong]
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=qQqNQ4y-cU8 [could be wrong]
+ * File Name: HandPresence.cs
+ * File Description: One method of hand animations in VR, helper script. [UNUSED]
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;

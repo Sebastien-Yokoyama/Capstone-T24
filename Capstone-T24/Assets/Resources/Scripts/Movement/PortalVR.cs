@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: Sebastian Lague
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=cWpFZbjtSQg
+ * File Name: PortalVR.cs
+ * File Description: A modified version of "FPSController" that allows the user to go through portals.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

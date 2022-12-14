@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: ColorFlip.cs
+/* FILE DESCRIPTION: When called swaps an attached objects color. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

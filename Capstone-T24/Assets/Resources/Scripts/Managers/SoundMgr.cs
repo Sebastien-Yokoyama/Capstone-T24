@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: SoundMgr.cs
+/* FILE DESCRIPTION: Manages major in game sounds / ambiences / music. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

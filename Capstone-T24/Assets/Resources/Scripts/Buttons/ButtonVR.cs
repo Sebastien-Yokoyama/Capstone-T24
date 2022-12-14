@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: RealaryVR
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=lPPa9y_czlE&
+ * File Name: ButtonVR
+ * File Description: A method of using buttons in VR. [UNUSED]
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Originally developed by: [UNKNOWN]
+ * Modified  by: Cody Jackson
+ * Video: [UNKNOWN]
+ * File Name: HandButton.cs
+ * File Description: Provides code for an XR based button. [UNUSED]
+ */
+
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;

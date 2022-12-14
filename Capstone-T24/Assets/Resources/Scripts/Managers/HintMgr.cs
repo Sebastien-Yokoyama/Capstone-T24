@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: HintMgr.cs
+/* FILE DESCRIPTION: Manages the hints system. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

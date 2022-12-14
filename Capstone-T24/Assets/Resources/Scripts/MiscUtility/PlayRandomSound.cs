@@ -1,3 +1,10 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: PlayRandomSound.cs
+/* FILE DESCRIPTION: Script that can play a specific or random sound when called on. */
+
 using System;
 using System.Collections;
 using System.Collections.Generic;

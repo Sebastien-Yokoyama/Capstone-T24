@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: IsLookingAt.cs
+/* FILE DESCRIPTION: Sets a bool True/False if 
+ * the player is looking at a certain layer. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

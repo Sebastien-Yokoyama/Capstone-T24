@@ -1,3 +1,11 @@
+/*
+ * Originally developed by: Valem Tutorials
+ * Modified  by: Cody Jackson
+ * Video: https://www.youtube.com/watch?v=CfzO6jvLY-w
+ * File Name: HandPresencePhysics.cs
+ * File Description: Gives the VR hands collision and basic physics interactions.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

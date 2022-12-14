@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: DisplaySignLit.cs
+/* FILE DESCRIPTION: Used in Lab1. Sets an object to be a certain material
+ * after X amount of time. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

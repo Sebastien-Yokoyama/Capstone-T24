@@ -1,3 +1,11 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: TriggerAfterTime.cs
+/* FILE DESCRIPTION: Script that triggers a UnityEvent when an object
+ * with a specified tag stays in a trigger for X amount of time. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,12 @@
+// NAME: Cody Jackson
+// EMAIL: codyj@nevada.unr.edu
+// COURSE: CS 425/426
+// ASSIGNMENT: Senior Project
+// FILE NAME: GenericTrigger.cs
+/* FILE DESCRIPTION: A script which can be applied to a Box Collider
+ * set as "Trigger" which will invoke an event when an object
+ with the specified tag enters/exits its space. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
