@@ -17,7 +17,9 @@ public class SimpleSlidingCover : MonoBehaviour
     private bool onlyOnce = false;
     public Animator anim;
 
+    [Tooltip("UNUSED: ???")]
     public bool specialValidate = false;
+    [Tooltip("Do certain flags need to be set so that this will only open after those flags are set? Int value = # of flags (max 2).")]
     public int validation = 0;
     public bool valid1 = false;
     public bool valid2 = false;

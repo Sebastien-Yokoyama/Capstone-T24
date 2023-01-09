@@ -23,9 +23,13 @@ public class EventMgr : MonoBehaviour
     /// <summary>
     /// The event that ends the intro sequence.
     /// </summary>
-    public UnityEvent endIntroSequence;
+    /// 
 
+    [Header("Generic Events")]
     public UnityEvent timedFromStart;
+
+    [Header("Lab1 Events")]
+    public UnityEvent endIntroSequence;
 
     public int eventFromStart;
     public float eventFromStartTime;
@@ -104,6 +108,7 @@ public class EventMgr : MonoBehaviour
 
 
     // Tutorial Events
+    [Header("Tutorial Events")]
 
     public UnityEvent tutorialArrival;
 
